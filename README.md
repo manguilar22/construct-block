@@ -6,6 +6,7 @@
 * geth 
 * ~~abigen~~ 
 * ~~puppeth~~ 
+* ~~bootnode~~
 
 ### Starting Ethereum Node 
 
@@ -33,7 +34,7 @@ geth --networkid 2020
 --rpcaddr "0.0.0.0"
 --rpcapi "eth,admin,rpc,txpool,net,web3,personal,miner,debug"
 --unlock $PUBLIC_KEY
---password ./password.txt
+--password $PASSWORD
 --verbosity 7
 --syncmode "full"
 --allow-insecure-unlock
@@ -42,8 +43,23 @@ geth --networkid 2020
 console 2>> Eth.log
 ```
 
-#### Console  
+#### Ethereum Console  
 
 ```
 > loadScript("./GethFunc.js")
+```
+
+### Bootnode 
+
+#### Generate Bootkey 
+
+```bash
+bootnode -genkey boot.key 
+``` 
+
+#### Deploy Bootnode 
+
+
+```bash 
+bootnode -nodekey boot.key -verbosity 7 -addr "127.0.0.1:30310"
 ```

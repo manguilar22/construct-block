@@ -6,7 +6,9 @@
 geth \
 --networkid $ETH_NETWORK_ID \
 --datadir ./node1/ \
---rpc --rpcport 8545 \
+--ws.origins "*" \
+--rpc \
+--rpcport 8545 \
 --rpccorsdomain "*" \
 --rpcaddr "0.0.0.0" \
 --rpcapi "eth,admin,rpc,txpool,net,web3,personal,miner,debug" \

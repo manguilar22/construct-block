@@ -1,11 +1,14 @@
 package network
 
 import (
+	"crypto/ecdsa"
 	"fmt"
 	"github.com/ethereum/go-ethereum/accounts"
 	"github.com/ethereum/go-ethereum/accounts/keystore"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/manguilar22/construct-block/utils/oop"
+	"log"
 )
 
 // Unlock Accounts on Host (IPC)
@@ -23,7 +26,7 @@ func CreateAccount(ks *keystore.KeyStore, password string) (accounts.Account) {
 }
 
 
-// Signing from Go
+// Signing from Go (IPC)
 func SigningTransaction(ks *keystore.KeyStore, password string) {
 	// Create a new account to sign transactions with
 	signer, _ := ks.NewAccount(password)
@@ -45,4 +48,22 @@ func SigningTransaction(ks *keystore.KeyStore, password string) {
 	*/
 
 	fmt.Println(signature)
+}
+
+
+// Sending Ether (IPC)
+func TransferEth(privateKeyStorePassword string) {
+	privateKey, err := crypto.HexToECDSA(privateKeyStorePassword)
+	if err != nil {
+		log.Fatalln("personal: Error unlocking account")
+	}
+
+	publicKey := privateKey.Public()
+	publicKeyECDSA, ok := publicKey.(*ecdsa.PublicKey)
+	if !ok {
+		log.Fatal("cannot ASSERT type: publicKey is not of type *ecdsa.PublicKey")
+	}
+	fromAddress := crypto.PubkeyToAddress(*publicKeyECDSA)
+
+	fmt.Println(fromAddress)
 }

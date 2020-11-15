@@ -1,3 +1,5 @@
+//  modules: admin:1.0 clique:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+
 function checkAllBalances() {
     var totalBal = 0;
     for (var acctNum in eth.accounts) {
