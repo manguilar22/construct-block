@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f24d7842-cb92-48de-b4af-c83920a6b14b" name="UTEP-blockchain">
+        <fileTransfer accessType="SFTP" host="129.108.78.5" port="22" sshConfigId="fd6e1ce4-e83b-40af-b761-9b12c975a6ab" sshConfig="mkether@129.108.78.5:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
