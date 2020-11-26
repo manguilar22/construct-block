@@ -9,6 +9,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="home-block">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/user/golang/src/github.com/manguilar22/construct-block" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
   </component>
 </project>

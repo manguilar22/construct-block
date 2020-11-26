@@ -1,22 +1,17 @@
-pragma solidity >0.5.0;
+pragma solidity ^0.4.24;
 
 contract Store {
-
-    struct Cart {
-        bytes32 key;
-        bytes32 value;
-    }
+    event ItemSet(bytes32 key, bytes32 value);
 
     string public version;
+    mapping (bytes32 => bytes32) public items;
 
-    mapping (uint => Cart) public items;
+    constructor(string _version) public {
+        version = _version;
+    }
 
-    uint public itemCount;
-
-    constructor() public {}
-
-    function setItem(Cart memory _car) private {
-        items[_car.key] = _car.value;
-        itemCount++;
+    function setItem(bytes32 key, bytes32 value) external {
+        items[key] = value;
+        emit ItemSet(key, value);
     }
 }

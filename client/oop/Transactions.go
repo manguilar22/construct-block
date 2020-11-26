@@ -1,6 +1,6 @@
 package oop
 
-type Transactions struct {
+type Transaction struct {
 	NetworkID uint64 `json:"network_id"`
 	BlockHash string `json:"block_hash"`
 	BlockValue string `json:"block_value"`
@@ -8,5 +8,5 @@ type Transactions struct {
 	GasPrice uint64 `json:"gas_price"`
 	Nonce uint64 `json:"nonce"`
 	Data []byte `json:"data"`
-	ToHex string `json:"to_hex"`
+	//ToHex string `json:"to_hex"`
 }

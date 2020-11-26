@@ -1,0 +1,24 @@
+# Grafana ID: 9707
+# Exporter: http://localhost:6060/debug/metrics/prometheus
+global:
+  scrape_interval: 15s
+  scrape_timeout: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+
+  - job_name: geth-freebsd
+    scrape_interval: 15s
+    scrape_timeout: 15s
+    metrics_path: /debug/metrics/prometheus
+    scheme: http
+    static_configs:
+      - <GETH-IP.ADDRESS>:6060
+
+  - job_name: geth-U18-node
+    scrape_interval: 15s
+    scrap_timeout: 15s
+    metrics_path: /debug/metrics/prometheus
+    scheme: http
+    static_configs:
+      - <GETH-IP.ADDRESS>:6060

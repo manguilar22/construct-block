@@ -20,10 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1b36878-45f6-49b6-bd45-41a28b8921f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/node.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.gohtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/startU18.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GethFunc.js" beforeDir="false" afterPath="$PROJECT_DIR$/GethFunc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GethFunc.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/GethFunc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/management.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/management.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/network.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/network.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/personal.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/personal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/Store.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/Store.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/savedData.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.md" beforeDir="false" afterPath="$PROJECT_DIR$/report.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/config.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/config.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/priv.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/oop/Block.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/oop/Block.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/oop/BlockChain.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/oop/BlockChain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/oop/Transactions.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/oop/Transactions.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,16 +77,16 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BlockchainElectionProject" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client" />
       <recent name="$PROJECT_DIR$/scripts" />
       <recent name="$PROJECT_DIR$/logs" />
       <recent name="$PROJECT_DIR$/utils/oop" />
-      <recent name="$PROJECT_DIR$/client" />
     </key>
   </component>
   <component name="RunManager">
@@ -108,9 +129,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="511" y="233" width="400" height="327" key="#Go_Modules/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1603756036245" />
-    <state x="295" y="44" width="832" height="704" key="#SSH_Configurations" timestamp="1603757667956">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="280" y="43" width="832" height="704" key="#SSH_Configurations" timestamp="1606373013361">
+      <screen x="67" y="27" width="1213" height="693" />
     </state>
+    <state x="280" y="43" key="#SSH_Configurations/67.27.1213.693/1280.0.1280.1024@67.27.1213.693" timestamp="1606373013361" />
     <state x="295" y="44" width="832" height="704" key="#SSH_Configurations/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1603757667956" />
     <state x="406" y="198" width="610" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604041565887">
       <screen x="67" y="27" width="1299" height="741" />
@@ -124,41 +146,53 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="598" y="266" width="216" height="261" key="EnvironmentVariablesDialog/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1603756035345" />
-    <state width="1234" height="267" key="GridCell.Tab.0.bottom" timestamp="1605417576710">
-      <screen x="1366" y="0" width="1280" height="1024" />
+    <state x="1366" y="198" width="424" height="484" key="FileChooserDialogImpl" timestamp="1605817190882">
+      <screen x="67" y="27" width="2579" height="997" />
     </state>
-    <state width="1234" height="267" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1280.1024@1366.0.1280.1024" timestamp="1605417576709" />
-    <state width="1234" height="267" key="GridCell.Tab.0.center" timestamp="1605417576709">
-      <screen x="1366" y="0" width="1280" height="1024" />
-    </state>
-    <state width="1234" height="267" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1280.1024@1366.0.1280.1024" timestamp="1605417576709" />
-    <state width="1234" height="267" key="GridCell.Tab.0.left" timestamp="1605417576709">
-      <screen x="1366" y="0" width="1280" height="1024" />
-    </state>
-    <state width="1234" height="267" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1280.1024@1366.0.1280.1024" timestamp="1605417576709" />
-    <state width="1234" height="267" key="GridCell.Tab.0.right" timestamp="1605417576709">
-      <screen x="1366" y="0" width="1280" height="1024" />
-    </state>
-    <state width="1234" height="267" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1280.1024@1366.0.1280.1024" timestamp="1605417576709" />
-    <state x="205" y="31" key="SettingsEditor" timestamp="1603761287173">
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1605441809168" />
+    <state x="1366" y="198" key="FileChooserDialogImpl/67.27.2579.997@67.27.2579.997" timestamp="1605817190882" />
+    <state width="1253" height="174" key="GridCell.Tab.0.bottom" timestamp="1605711300175">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
+    <state width="1234" height="267" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1280.1024@1366.0.1280.1024" timestamp="1605417576709" />
+    <state width="1253" height="174" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1605711300175" />
+    <state width="1253" height="174" key="GridCell.Tab.0.center" timestamp="1605711300175">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1234" height="267" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1280.1024@1366.0.1280.1024" timestamp="1605417576709" />
+    <state width="1253" height="174" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1605711300175" />
+    <state width="1253" height="174" key="GridCell.Tab.0.left" timestamp="1605711300175">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1234" height="267" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1280.1024@1366.0.1280.1024" timestamp="1605417576709" />
+    <state width="1253" height="174" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1605711300175" />
+    <state width="1253" height="174" key="GridCell.Tab.0.right" timestamp="1605711300175">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1234" height="267" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1280.1024@1366.0.1280.1024" timestamp="1605417576709" />
+    <state width="1253" height="174" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1605711300175" />
+    <state x="196" y="27" width="1012" height="693" key="SettingsEditor" timestamp="1606373115263">
+      <screen x="67" y="27" width="1213" height="693" />
+    </state>
+    <state x="196" y="27" width="1012" height="693" key="SettingsEditor/67.27.1213.693/1280.0.1280.1024@67.27.1213.693" timestamp="1606373115263" />
     <state x="205" y="31" key="SettingsEditor/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1603761287172" />
     <state x="326" y="27" width="770" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603761530067">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="326" y="27" width="770" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1603761530067" />
-    <state x="617" y="109" key="ftp.server.browser" timestamp="1603758076336">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="581" y="104" width="187" height="573" key="ftp.server.browser" timestamp="1606373025411">
+      <screen x="67" y="27" width="1213" height="693" />
     </state>
+    <state x="581" y="104" width="187" height="573" key="ftp.server.browser/67.27.1213.693/1280.0.1280.1024@67.27.1213.693" timestamp="1606373025411" />
     <state x="617" y="109" key="ftp.server.browser/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1603758076336" />
     <state x="581" y="290" width="260" height="212" key="publish.login" timestamp="1603756551013">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="581" y="290" width="260" height="212" key="publish.login/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1603756551013" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1605420051750">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="358" y="85" width="672" height="635" key="search.everywhere.popup" timestamp="1606411388531">
+      <screen x="67" y="27" width="1213" height="693" />
     </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1605420051750" />
+    <state x="358" y="85" width="672" height="635" key="search.everywhere.popup/67.27.1213.693/1280.0.1280.1024@67.27.1213.693" timestamp="1606411388531" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1605730764607" />
   </component>
 </project>

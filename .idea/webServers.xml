@@ -3,7 +3,14 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="f24d7842-cb92-48de-b4af-c83920a6b14b" name="UTEP-blockchain">
-        <fileTransfer accessType="SFTP" host="129.108.78.5" port="22" sshConfigId="fd6e1ce4-e83b-40af-b761-9b12c975a6ab" sshConfig="mkether@129.108.78.5:22 password">
+        <fileTransfer accessType="SFTP" host="192.168.1.65" port="22" sshConfigId="fd6e1ce4-e83b-40af-b761-9b12c975a6ab" sshConfig="user@192.168.1.65:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="b959925f-fbb2-46eb-90f5-ec2eb994b7b1" name="home-block">
+        <fileTransfer accessType="SFTP" host="192.168.1.65" port="22" sshConfigId="fd6e1ce4-e83b-40af-b761-9b12c975a6ab" sshConfig="user@192.168.1.65:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

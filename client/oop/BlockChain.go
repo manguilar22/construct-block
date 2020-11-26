@@ -1,23 +1,26 @@
 package oop
 
 type Blockchain struct {
-	Data []EthBlock `json:"data"`
+	Hostname string `json:"hostname"`
+	BlockData []EthBlock `json:"block_data"`
+	TransactionData []Transaction `json:"transaction_data"`
 }
 
+// TODO: Delete?
 func (b *Blockchain) GetTransactionBlocks() (data []EthBlock) {
-	var blockData []EthBlock = b.Data
+	var blockData = b.BlockData
 
 	for e := range blockData {
-		if (blockData[e].TransactionCount > 0) {
+		if (blockData[e].BlockTransactions > 0) {
 			data = append(data, blockData[e])
 		}
 	}
 	return
 }
 
-
+// TODO: Delete?
 func (b *Blockchain) FilterBlocks(pred func(EthBlock) bool) (data []EthBlock) {
-	var blockData []EthBlock = b.Data
+	var blockData []EthBlock = b.BlockData
 
 	for e := range blockData {
 		if pred(blockData[e]) {

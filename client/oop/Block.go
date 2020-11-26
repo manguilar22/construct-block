@@ -6,5 +6,5 @@ type EthBlock struct {
 	MiningDifficulty  uint64 `json:"mining_difficulty"`
 	Hash              string `json:"hash"`
 	BlockTransactions int    `json:"block_transactions"`
-	TransactionCount uint   `json:"transaction_count"`
+//	TransactionCount uint   `json:"transaction_count"`
 }
