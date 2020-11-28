@@ -58,9 +58,10 @@ func GetAllAccounts(hostKeyStoreFilePath string) http.HandlerFunc {
 }
 
 func GetAllAccountBalance(client *ethclient.Client, ks *keystore.KeyStore) http.HandlerFunc {
+	accounts := ks.Accounts()
 	return func(writer http.ResponseWriter, request *http.Request) {
 		allBalances := make(map[string]string)
-		for _, accountHex := range ks.Accounts() {
+		for _, accountHex := range accounts {
 			balance, _ := client.BalanceAt(context.Background(), accountHex.Address, nil)
 			allBalances[accountHex.Address.Hex()] = balance.String()
 			log.Printf("Getting Balance of account %s and has %d wei", accountHex.Address.String(), balance)

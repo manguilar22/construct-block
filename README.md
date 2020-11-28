@@ -19,8 +19,8 @@ export PASSWORD_FILE=""                 # KeyStore Password (Unlock Account)
 
 ### REST-API 
 
-```bash 
-go run node.go 
+```
+~$ go run node.go 
 ```
 
 * / 

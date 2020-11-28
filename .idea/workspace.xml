@@ -22,15 +22,6 @@
     <list default="true" id="d1b36878-45f6-49b6-bd45-41a28b8921f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/management.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/management.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/network.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/network.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/GethFunc.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/GethFunc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/config.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/config.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/startBSD.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/startBSD.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/startU18.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/startU18.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,9 +127,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="598" y="266" width="216" height="261" key="EnvironmentVariablesDialog/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1603756035345" />
-    <state x="1366" y="198" width="424" height="484" key="FileChooserDialogImpl" timestamp="1605817190882">
-      <screen x="67" y="27" width="2579" height="997" />
+    <state x="678" y="146" width="374" height="337" key="FileChooserDialogImpl" timestamp="1606557302933">
+      <screen x="67" y="27" width="1213" height="693" />
     </state>
+    <state x="678" y="146" width="374" height="337" key="FileChooserDialogImpl/67.27.1213.693/1280.0.1280.1024@67.27.1213.693" timestamp="1606557302933" />
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741/1366.0.1280.1024@67.27.1299.741" timestamp="1605441809168" />
     <state x="1366" y="198" key="FileChooserDialogImpl/67.27.2579.997@67.27.2579.997" timestamp="1605817190882" />
     <state width="1253" height="174" key="GridCell.Tab.0.bottom" timestamp="1605711300175">
