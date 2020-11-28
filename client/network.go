@@ -14,7 +14,6 @@ func ConnectEthHTTP(hostName string) (client *ethclient.Client, err error){
 	var url  = fmt.Sprintf("http://%s",hostName)
 
 	client, err = ethclient.Dial(url)
-	defer client.Close()
 
 	if err != nil {
 		log.Fatalln("Error Connecting Remotely")
@@ -28,7 +27,6 @@ func ConnectEthWS(hostName string) (client *ethclient.Client, err error){
 	var url  = fmt.Sprintf("ws://%s",hostName)
 
 	client, err = ethclient.Dial(url)
-	defer client.Close()
 
 	if err != nil {
 		log.Fatalln("Error Connecting Remotely")

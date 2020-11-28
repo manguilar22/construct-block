@@ -28,4 +28,4 @@ geth \
 --metrics.addr "0.0.0.0" \
 --metrics \
 --metrics.expensive \
-#console 2>> Eth.log
+console 2>> Eth.log

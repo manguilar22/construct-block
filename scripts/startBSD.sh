@@ -4,8 +4,7 @@
 setenv ETH_NETWORK_ID 0
 setenv DATADIR /usr/home/${USER}
 setenv VERSION 0                                         # 0=hostname, 1=HTTP
-setenv HOSTNAME 0                                        # HTTP, Web Socket, RPCw
-setenv IPC_FILE /usr/home/${USER}                        # geth.ipc
+setenv HOSTNAME 0                                        # HTTP, Web Socket, RPC
 setenv PUBLIC_KEY 0x...                                  # Signing Hex Address
 setenv KEYSTORE /usr/home/${USER}                        # Keystore File Directory
 setenv PRIVATE_KEY 0                                     # Private Key Hex Address
@@ -14,6 +13,7 @@ setenv PASSWORD_FILE /usr/home/${USER}                   # KeyStore Password
 
 # Standalone - Ethereum Node
 geth \
+--nodiscover \
 --networkid $ETH_NETWORK_ID \
 --datadir $DATADIR \
 --jspath ./scripts/ \

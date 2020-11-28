@@ -37,7 +37,7 @@ func GetAllBlocks(client *ethclient.Client) (blockData []*types.Block) {
 
 
 		blockData = append(blockData, blockN)
-		fmt.Printf("management: Block number %d of %d with a transaction count of %d\n",iterator, length, count)
+		log.Printf("management: Block number %d of %d with a transaction count of %d\n",iterator, length, count)
 	}
 	return
 }

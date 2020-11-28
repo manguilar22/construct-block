@@ -1,5 +1,21 @@
 //  JS modules: admin:1.0 clique:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
 
+function makeTrades(nTrades, weiMax ,weiUnit) {
+    var genesisBlock = eth.accounts[0];
+
+    for (var i = 0; i < nTrades; i++) {
+        var randomNumber =  Math.floor(Math.random()*weiMax)+1
+        var randomAccountIndex = Math.floor(Math.random()*eth.accounts.length-1)+1
+
+        console.log("transfer to account="+eth.accounts[randomAccountIndex]+" wei value="+randomNumber+" "+weiUnit)
+        web3.eth.sendTransaction({
+            from: genesisBlock,
+            to: eth.accounts[randomAccountIndex],
+            value: web3.toWei(randomNumber, weiUnit)
+        });
+    }
+}
+
 function makeBallots(accountPassword, accountNumber) {
     for (var i = 0; i < accountNumber; i++) {
         personal.newAccount(accountPassword);
@@ -27,11 +43,8 @@ function checkAllBalances(weiUnit) {
     console.log("Total balance: " + totalBal + " ether");
 }
 
-function unlockAllAccounts(password) {
-    for(var e in eth.accounts) {
-        var accountStatus = personal.unlockAccount(eth.accounts[e],password);
-        console.log(accountStatus);
-    }
+function checkBalance(accountHex, weiUnit) {
+    return web3.fromWei(eth.getBalance(accountHex), weiUnit)
 }
 
 function unlockAllAccounts(passwordString) {
@@ -41,9 +54,11 @@ function unlockAllAccounts(passwordString) {
     }
 }
 
-function sendTransaction(fromAccountHex, toAccountHex, weiValue, weiUnit) {
+function sendTransaction(toAccountHex, weiValue, weiUnit) {
+    var genesisBlock = eth.accounts[0];
+
     eth.sendTransaction({
-        from:fromAccountHex,
+        from:genesisBlock,
         to:toAccountHex,
         value: web3.toWei(weiValue, weiUnit)
     })
@@ -52,8 +67,4 @@ function sendTransaction(fromAccountHex, toAccountHex, weiValue, weiUnit) {
 function getWei(accountHex) {
     var currentWei = eth.getBalance(accountHex);
     return currentWei
-}
-
-function checkBalance(accountHex, weiUnit) {
-    return web3.fromWei(eth.getBalance(accountHex), weiUnit)
 }
