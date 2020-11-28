@@ -5,7 +5,7 @@
 geth \
 --networkid $ETH_NETWORK_ID \
 --datadir $DATADIR \
---jspath ./scripts/ \
+--preload ./scripts/GethFunc.js \
 --ws \
 --ws.addr "0.0.0.0" \
 --ws.port 8546 \

@@ -81,8 +81,7 @@ export PUBLIC_KEY="0x..."
 geth 
 --networkid 2020
 --datadir ./node1/
---jspath ./scripts/
---preload GethFunc.js
+--preload ./scripts/GethFunc.js
 --http
 --http.addr "0.0.0.0" 
 --http.port 8545
