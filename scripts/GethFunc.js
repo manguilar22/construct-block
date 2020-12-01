@@ -23,7 +23,7 @@ function makeBallots(accountPassword, accountNumber) {
 }
 
 function makeVote(weiValue, weiUnit) {
-    // 1 * 10^28 wei = 1 ether
+    // 1 * 10^18 wei = 1 ether
     var genesis = eth.accounts[0];
     var l = eth.accounts.length;
     for (var i = 1; i < l; i++) {
