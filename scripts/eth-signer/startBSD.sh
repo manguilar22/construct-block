@@ -9,7 +9,6 @@ setenv PUBLIC_KEY 0x...                                  # Signing Hex Address
 setenv KEYSTORE /usr/home/${USER}                        # Keystore File Directory
 setenv PRIVATE_KEY 0                                     # Private Key Hex Address
 setenv PASSWORD_FILE /usr/home/${USER}                   # KeyStore Password
---keystore ./bsdNode1/keystore/ \
 
 # Standalone - Ethereum Node
 geth \
